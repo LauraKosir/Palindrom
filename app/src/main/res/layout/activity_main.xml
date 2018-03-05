@@ -68,8 +68,8 @@
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="375dp"
-        android:layout_height="34dp"
+        android:layout_width="359dp"
+        android:layout_height="185dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
