@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Palindrom</string>
+    <string name="title_activity_palindrom">Palindrom</string>
+    <string name="check_string">check String</string>
+    <string name="palindrom">Palindrom?</string>
+    <string name="eingabe_string">Eingabe String:</string>
+    <string name="string_5_zeichen"><![CDATA[String >= 5 Zeichen]]></string>
+</resources>
