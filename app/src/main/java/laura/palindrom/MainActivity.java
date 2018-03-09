@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 String str = inputString.getText().toString();
                 StringBuilder b = new StringBuilder(str);
 
-                if (str!="" && str.length()>=5 && str.equals(new StringBuilder(str).reverse().toString())) {
+                if (str.length()>=5 && str.equals(new StringBuilder(str).reverse().toString())) {
                     result.setText("Result: Palindrome");
                 } else {
                     result.setText("Result: not a Palindrome");
@@ -45,10 +45,6 @@ public class MainActivity extends AppCompatActivity {
                     result.setText("Achtung: Das Wort muss min. 5 Zeichen lang sein");
                 }
 
-                if (str==""){
-                    result.setText("Fehler: Bitte ein Wort eingeben");
-
-                }
 
                 if (str.contains("!") || str.contains("/") || str.contains("_") || str.contains("?") || str.contains("€") || str.contains("0")|| str.contains("1")||
                         str.contains("2")|| str.contains("3")|| str.contains("4")|| str.contains("5")|| str.contains("6")|| str.contains("7")|| str.contains("8")|| str.contains("9")){
