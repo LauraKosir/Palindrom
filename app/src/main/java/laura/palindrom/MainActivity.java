@@ -34,24 +34,24 @@ public class MainActivity extends AppCompatActivity {
                 String str = inputString.getText().toString();
                 StringBuilder b = new StringBuilder(str);
 
+                //Prüft eingegebenen String auf Palindrome
                 if (str.length()>=5 && str.equals(new StringBuilder(str).reverse().toString())) {
-                    result.setText("Result: Palindrome");
+                    result.setText("Ergebnis: Palindrom");
                 } else {
-                    result.setText("Result: not a Palindrome");
+                    result.setText("Ergebnis: kein Palindrom");
 
                 }
 
+                //prüft ob die Eingabe kleiner ist als 5 Zeichen
                 if(str.length()<5) {
                     result.setText("Achtung: Das Wort muss min. 5 Zeichen lang sein");
                 }
 
-
+                //prüft ob der eingegebene String Sonderzeichen oder Zahlen beinhaltet
                 if (str.contains("!") || str.contains("/") || str.contains("_") || str.contains("?") || str.contains("€") || str.contains("0")|| str.contains("1")||
                         str.contains("2")|| str.contains("3")|| str.contains("4")|| str.contains("5")|| str.contains("6")|| str.contains("7")|| str.contains("8")|| str.contains("9")){
                     result.setText("Fehler: Nur Buchstaben erlaubt");
                 }
-
-
 
             }
         } );
